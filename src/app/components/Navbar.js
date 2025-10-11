@@ -9,7 +9,7 @@ export default function Navbar() {
         {/* Logo + Name */}
         <div className="flex items-center space-x-2">
           <FaHospitalSymbol className="text-green-600 text-2xl" />
-          <span className="text-2xl font-bold text-green-700">AxisCare</span>
+          <span className="text-2xl font-bold text-green-700">GATEWELL HOSPITAL</span>
         </div>
 
         {/* Menu */}

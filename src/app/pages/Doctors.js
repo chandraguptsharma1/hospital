@@ -5,46 +5,49 @@ import { FaFacebookF, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const doctors = [
   {
-    name: "Dr. Diana Ayers",
-    role: "Cardiologist",
-    img: "https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?semt=ais_hybrid&w=740&q=80",
+    name: "Dr. Satish Kumar",
+    role: "Chief Clinical Cardiologist & Chairman",
+    img: "https://i.ibb.co/8Dvfjr2r/drsatish.png"
   },
   {
-    name: "Dr. Tracy Mckay",
-    role: "Dermatologist",
-    img: "/doctor2.jpg",
+    name: "Dr. Rahul Kumar",
+    role: "Consultant Interventional Cardiologist",
+    img: "https://i.ibb.co/MxpXX923/drrahul.png"
   },
   {
-    name: "Dr. Jeffrey Davis",
-    role: "Orthopedic Surgeon",
-    img: "/doctor3.jpg",
+    name: "Dr. Sujit Pandey",
+    role: "Chief Consultant General & Laparoscopic Surgery",
+    img: "https://i.ibb.co/Mkj0WjmN/drsujit.png"
   },
   {
-    name: "Dr. Allen Hartzler",
-    role: "Neurologist",
-    img: "/doctor4.jpg",
+    name: "Dr. R. N. Pradhan",
+    role: "Consultant Physician",
+    img: "https://i.ibb.co/Wpxv24g2/drpradhan.png"
   },
   {
-    name: "Dr. Sophia Carter",
-    role: "Pediatrician",
-    img: "/doctor5.jpg",
+    name: "Dr. Mukeshkumar Rajak",
+    role: "Chief Consultant Nephrology and Dialysis Unit",
+    img: "https://i.ibb.co/7tnmmP5C/drrajak.png"
   },
   {
-    name: "Dr. Michael Brown",
-    role: "ENT Specialist",
-    img: "/doctor6.jpg",
+    name: "Dr. R. N. Sinha",
+    role: "Consultant Physician",
+    img: "https://i.ibb.co/WvqnNqKn/drbnsinha.png"
   },
   {
-    name: "Dr. Emily White",
-    role: "Gynecologist",
-    img: "/doctor7.jpg",
+    name: "Dr. Prashant Kumar",
+    role: "Physician and Consultant Psychiatrist",
+    img: "https://i.ibb.co/fzTX2qTj/drprabhat.png"
   },
   {
-    name: "Dr. Daniel Green",
-    role: "General Physician",
-    img: "/doctor8.jpg",
+    name: "Dr. Anurag Agrawal",
+    role: "Radiologist & Sonologist",
+    img: "https://i.ibb.co/jPQyVyb8/dranuragag.png"
   },
+
+
 ];
+
 
 export default function DoctorsPage() {
   return (

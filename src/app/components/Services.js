@@ -1,44 +1,50 @@
 "use client";
 import {
-  FaHeartbeat,
-  FaBrain,
-  FaUserMd,
-  FaLungs,
+  FaSyringe,
+  FaProcedures,
+  FaBaby,
+  FaStethoscope,
+  FaToilet,
+  FaHospital,
   FaXRay,
-  FaSpa,
 } from "react-icons/fa";
 
 export default function Services() {
   const services = [
     {
-      icon: <FaHeartbeat size={40} className="text-teal-600" />,
-      title: "Cardiology",
-      desc: "Expert heart care services with modern facilities.",
+      icon: <FaSyringe size={40} className="text-teal-600" />,
+      title: "Hernia Surgery",
+      desc: "Safe and modern laparoscopic hernia operation facilities.",
     },
     {
-      icon: <FaBrain size={40} className="text-teal-600" />,
-      title: "Neurology",
-      desc: "Advanced neurology treatments and diagnosis.",
-    },
-    {
-      icon: <FaUserMd size={40} className="text-teal-600" />,
-      title: "Urology",
-      desc: "Comprehensive care for urinary and reproductive health.",
-    },
-    {
-      icon: <FaLungs size={40} className="text-teal-600" />,
-      title: "Pulmonary",
-      desc: "Pulmonary treatments for respiratory diseases.",
+      icon: <FaProcedures size={40} className="text-teal-600" />,
+      title: "Appendix Surgery",
+      desc: "Quick and painless appendix removal by experienced surgeons.",
     },
     {
       icon: <FaXRay size={40} className="text-teal-600" />,
-      title: "Radiology",
-      desc: "Modern diagnostic imaging and radiology services.",
+      title: "Gallbladder Stone",
+      desc: "Gallstone removal and gallbladder surgeries with expert care.",
     },
     {
-      icon: <FaSpa size={40} className="text-teal-600" />,
-      title: "Hypnotherapy",
-      desc: "Holistic therapies for better mental wellness.",
+      icon: <FaBaby size={40} className="text-teal-600" />,
+      title: "Caesarean Delivery",
+      desc: "Safe and hygienic cesarean delivery under specialist supervision.",
+    },
+    {
+      icon: <FaStethoscope size={40} className="text-teal-600" />,
+      title: "Uterus Surgery",
+      desc: "Treatment and surgical procedures for uterus-related conditions.",
+    },
+    {
+      icon: <FaToilet size={40} className="text-teal-600" />,
+      title: "Piles Treatment",
+      desc: "Advanced treatment for piles (baawasir) with quick recovery.",
+    },
+    {
+      icon: <FaHospital size={40} className="text-teal-600" />,
+      title: "Kidney Stone Operation",
+      desc: "Kidney stone removal through modern laparoscopic operation.",
     },
   ];
 
@@ -50,7 +56,7 @@ export default function Services() {
           Medical Services
         </p>
         <h2 className="mt-3 text-3xl md:text-4xl font-bold text-gray-800">
-          Find Out More About Our Services
+          Find Out More About Our Treatments
         </h2>
 
         {/* Grid */}
@@ -58,27 +64,13 @@ export default function Services() {
           {services.map((s, i) => (
             <div
               key={i}
-              className={`p-8 rounded-xl border bg-green-50 hover:shadow-xl transition 
-                ${
-                  s.highlight
-                    ? "bg-white shadow-lg border-t-4 border-blue-600"
-                    : ""
-                }`}
+              className="p-8 rounded-xl border bg-green-50 hover:shadow-xl transition"
             >
               <div className="flex justify-center mb-4">{s.icon}</div>
-              <h3
-                className={`text-xl font-semibold ${
-                  s.highlight ? "text-blue-700" : "text-green-700"
-                }`}
-              >
+              <h3 className="text-xl font-semibold text-green-700">
                 {s.title}
               </h3>
               <p className="mt-2 text-gray-600 text-sm">{s.desc}</p>
-              {s.highlight && (
-                <button className="mt-4 text-blue-600 font-medium flex items-center justify-center gap-2">
-                  Read More →
-                </button>
-              )}
             </div>
           ))}
         </div>

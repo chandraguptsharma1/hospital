@@ -3,15 +3,38 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const services = [
-    { name: "OPD", img: "/services/opd.jpg" },
-    { name: "IPD", img: "/services/ipd.jpg" },
-    { name: "24-Hour Emergency", img: "/services/emergency.jpg" },
-    { name: "Day Care Services", img: "/services/daycare.jpg" },
-    { name: "Digital X-Ray", img: "/services/xray.jpg" },
-    { name: "ECG", img: "/services/ecg.jpg" },
-    { name: "Preventive Health & Wellness", img: "/services/wellness.jpg" },
-    { name: "24 Hour Pharmacy", img: "/services/pharmacy.jpg" },
-    { name: "Diagnostics Services", img: "/services/diagnostics.jpg" },
+    {
+        name: "Hernia Operation",
+        img: "https://i.ibb.co/MxfX6cLw/herniasurgery-1280.jpg",
+    },
+    {
+        name: "Appendix Surgery",
+        img: "https://i.ibb.co/vK8KFL0/Appendix-surgery.jpg",
+    },
+    {
+        name: "Gallbladder Stone Removal",
+        img: "https://i.ibb.co/gbHkcJq1/Gallbladder-Stones.png",
+    },
+    {
+        name: "Caesarean (C-section)",
+        img: "https://i.ibb.co/JwGLrhw4/What-will-happen-when-I-have-my-planned-Caesarean-Section-blog-1024x1024.jpg",
+    },
+    {
+        name: "Uterus Surgery",
+        img: "https://i.ibb.co/Pz0v09GQ/medium-20190424-110550-817301-tu-cung-max-1800x1800-png-79278c9d8b.png",
+    },
+    {
+        name: "Piles (Bawasir) Treatment",
+        img: "https://i.ibb.co/gbqzBRt2/Piles-1.jpg",
+    },
+    {
+        name: "Kidney Stone Operation (Laparoscopic)",
+        img: "https://i.ibb.co/1CqhTby/open-and-laparoscopic-stone-surgery.jpg",
+    },
+    {
+        name: "24 Hrs Emergency Service",
+        img: "https://i.ibb.co/8V6BJX3/istockphoto-1330919226-612x612-1.jpg",
+    },
 ];
 
 export default function ServicesPage() {

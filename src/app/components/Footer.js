@@ -10,35 +10,16 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mt-20">
+    <footer >
       {/* Newsletter Section */}
-      <div className="bg-blue-600 text-white py-10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-          <div>
-            <h3 className="text-xl font-semibold">Subscribe Newsletter</h3>
-            <p className="mt-2 text-lg">
-              Get the latest updates by subscribing to our newsletter
-            </p>
-          </div>
-          <div className="mt-6 md:mt-0 flex">
-            <input
-              type="email"
-              placeholder="Your email address..."
-              className="px-4 py-2 rounded-l-md text-gray-700 focus:outline-none"
-            />
-            <button className="bg-gray-900 text-white px-6 py-2 rounded-r-md hover:bg-gray-800 transition">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+
 
       {/* Footer Main */}
       <div className="bg-gray-900 text-gray-300 py-14">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
           {/* About / Logo */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-4">Medcare</h4>
+            <h4 className="text-white font-bold text-lg mb-4">Gatewell</h4>
             <p className="text-sm leading-relaxed">
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum passages.
@@ -49,7 +30,7 @@ export default function Footer() {
             </div>
             <div className="mt-2 flex items-center gap-2">
               <FaMapMarkerAlt className="text-green-500" />
-              <span>1378 Whitetail Frisco, 75034</span>
+              <span>Plot No - 286,Co-operative Colony, Near Ukrid More-827001</span>
             </div>
           </div>
 
@@ -122,7 +103,11 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex items-center gap-2 border p-2 rounded-md w-fit">
               <FaPhoneAlt className="text-green-500" />
-              <span>+012 345 6789</span>
+              <span>8904117494</span>
+            </div>
+            <div className="mt-4 flex items-center gap-2 border p-2 rounded-md w-fit">
+              <FaPhoneAlt className="text-green-500" />
+              <span>9431586911</span>
             </div>
           </div>
         </div>
@@ -134,13 +119,13 @@ export default function Footer() {
             Policy
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="bg-green-600 p-2 rounded-full text-white">
+            <a href="https://www.facebook.com/profile.php?id=61581545083933" className="bg-green-600 p-2 rounded-full text-white">
               <FaFacebookF />
             </a>
             <a href="#" className="bg-green-600 p-2 rounded-full text-white">
               <FaTwitter />
             </a>
-            <a href="#" className="bg-green-600 p-2 rounded-full text-white">
+            <a href="https://www.linkedin.com/company/109071899/admin/dashboard/" className="bg-green-600 p-2 rounded-full text-white">
               <FaInstagram />
             </a>
           </div>
