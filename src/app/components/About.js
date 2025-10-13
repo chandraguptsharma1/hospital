@@ -18,7 +18,7 @@ export default function AboutUs() {
             <span className="w-8 h-[2px] bg-green-600"></span> About Us
           </p>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-gray-800">
-            Welcome To Gate Well Hospital
+            Welcome To Get Well Hospital
           </h2>
 
 
