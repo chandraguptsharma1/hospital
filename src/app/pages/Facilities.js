@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import {
   FaVideo,
   FaAmbulance,
@@ -12,27 +13,32 @@ export default function Facilities() {
     {
       icon: <FaHospital size={28} />,
       title: "Instant Operation",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam eu turpis molestie.",
+      desc: "Quick and safe surgical care available 24/7 with modern equipment and experienced doctors.",
+      link: "/facilities/instant-operation",
     },
     {
       icon: <FaVideo size={28} />,
       title: "Online Sessions",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam eu turpis molestie.",
+      desc: "Consult with our doctors from home through secure video calls and online follow-ups.",
+      link: "/facilities/online-sessions",
     },
     {
       icon: <FaAmbulance size={28} />,
       title: "Emergency Care",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam eu turpis molestie.",
+      desc: "Round-the-clock ambulance and emergency department with advanced life-saving equipment.",
+      link: "/facilities/emergency-care",
     },
     {
       icon: <FaShieldAlt size={28} />,
       title: "Private & Secure",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam eu turpis molestie.",
+      desc: "We ensure total privacy and safety with secure records and clean private rooms.",
+      link: "/facilities/private-secure",
     },
     {
       icon: <FaBiking size={28} />,
       title: "Outdoor Service",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam eu turpis molestie.",
+      desc: "Ambulance and outdoor patient support facilities available across Bokaro region.",
+      link: "/facilities/outdoor-service",
     },
   ];
 
@@ -48,27 +54,28 @@ export default function Facilities() {
             Facilities That We Provide
           </h2>
           <p className="mt-6 text-gray-600 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim metus
-            nec fringilla accumsan.
+            Get Well Hospital offers world-class medical facilities including
+            instant surgeries, emergency care, online consultations, and private wards.
+            We are committed to providing quality treatment with compassion and care.
           </p>
 
-          <button className="mt-8 px-6 py-3 border border-green-600 text-green-600 rounded-md hover:bg-green-600 hover:text-white transition">
-            View All →
-          </button>
+          {/* <Link href="/facilities">
+            <button className="mt-8 px-6 py-3 border border-green-600 text-green-600 rounded-md hover:bg-green-600 hover:text-white transition">
+              View All →
+            </button>
+          </Link> */}
         </div>
 
         {/* Right Facility Cards */}
         <div className="grid sm:grid-cols-2 gap-6">
           {facilities.map((f, i) => (
-            <div
-              key={i}
-              className="bg-teal-500 text-white p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col gap-3"
-            >
-              <div className="text-2xl">{f.icon}</div>
-              <h3 className="text-lg font-semibold">{f.title}</h3>
-              <p className="text-sm opacity-90">{f.desc}</p>
-            </div>
+            <Link href={f.link} key={i}>
+              <div className="bg-teal-500 text-white p-6 rounded-lg shadow hover:shadow-xl hover:bg-teal-600 transition flex flex-col gap-3 cursor-pointer">
+                <div className="text-2xl">{f.icon}</div>
+                <h3 className="text-lg font-semibold">{f.title}</h3>
+                <p className="text-sm opacity-90">{f.desc}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
