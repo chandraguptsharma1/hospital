@@ -26,7 +26,7 @@ export default function AppointmentPage() {
         setMessage({ text: "", type: "" });
 
         try {
-            const response = await fetch("https://hospitalbackend.netlify.app/api/appointment", {
+            const response = await fetch("https://hospital-backend-hfn7.onrender.com/api/appointment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(form),
