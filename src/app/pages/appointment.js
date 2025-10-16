@@ -14,10 +14,35 @@ export default function AppointmentPage() {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert("Appointment booked!");
+
+        try {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbzBWnx3776FVxh7QsTs45XSyOOZwquBFeNf_hcXDLnvx6Qiqg8MGSt0M5niUIb5_5CC/exec", {
+                method: "POST",
+                body: JSON.stringify(form),
+                headers: { "Content-Type": "application/json" },
+            });
+
+            const result = await response.json();
+            if (result.status === "success") {
+                alert("✅ Appointment saved to Google Sheet!");
+                setForm({
+                    name: "",
+                    mobile: "",
+                    age: "",
+                    address: "",
+                    doctor: "",
+                    date: "",
+                });
+            } else {
+                alert("❌ Failed to save appointment");
+            }
+        } catch (err) {
+            alert("⚠️ Error: " + err.message);
+        }
     };
+
 
     return (
         <div className="min-h-screen bg-gray-50 py-10">
