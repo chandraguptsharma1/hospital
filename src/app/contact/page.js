@@ -51,7 +51,7 @@ export default function ContactPage() {
 
                             <div className="mt-8">
                                 <img
-                                    src="/images/hospital-building.jpg"
+                                    src="https://i.ibb.co/MyzH40Wq/Chat-GPT-Image-Oct-17-2025-03-09-19-PM.png"
                                     alt="Get Well Hospital"
                                     className="rounded-lg shadow-md"
                                 />

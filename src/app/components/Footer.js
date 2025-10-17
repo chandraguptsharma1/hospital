@@ -7,6 +7,8 @@ import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -79,8 +81,19 @@ export default function Footer() {
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="https://www.facebook.com/profile.php?id=61581545083933" className="bg-green-600 p-2 rounded-full text-white hover:bg-green-700"><FaFacebookF /></Link>
-            <Link href="#" className="bg-green-600 p-2 rounded-full text-white hover:bg-green-700"><FaTwitter /></Link>
-            <Link href="https://www.linkedin.com/company/109071899/admin/dashboard/" className="bg-green-600 p-2 rounded-full text-white hover:bg-green-700"><FaInstagram /></Link>
+            <Link
+              href="https://www.linkedin.com/company/109071899/admin/dashboard/"
+              className="bg-green-600 p-2 rounded-full text-white hover:bg-green-700"
+            >
+              <FaLinkedinIn />
+            </Link>
+            <Link
+              href="http://www.youtube.com/@Getwellbksc"
+              className="bg-green-600 p-2 rounded-full text-white hover:bg-green-700"
+            >
+              <FaYoutube />
+            </Link>
+            <Link href="https://www.instagram.com/getwellbksc?igsh=MWFpYmp3a283ZnBxZg==" className="bg-green-600 p-2 rounded-full text-white hover:bg-green-700"><FaInstagram /></Link>
           </div>
         </div>
       </div>
