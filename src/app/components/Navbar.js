@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { FaHospitalSymbol } from "react-icons/fa";
 
@@ -8,7 +9,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo + Name */}
         <div className="flex items-center space-x-2">
-          <FaHospitalSymbol className="text-green-600 text-2xl" />
+          <Image
+            src="/logo.png" // 👈 apna logo yaha daalna (public/logo.png)
+            alt="Get Well Hospital Logo"
+            width={40} // 👈 size adjust kar sakte ho
+            height={40}
+            className="rounded-md"
+          />
           <span className="text-2xl font-bold text-green-700">GET WELL HOSPITAL</span>
         </div>
 

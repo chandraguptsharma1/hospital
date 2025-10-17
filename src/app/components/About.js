@@ -46,7 +46,7 @@ export default function AboutUs() {
           <div className="absolute -top-6 -left-6 w-full h-full border-8 border-blue-100 rounded-lg -z-10"></div>
           <div className="absolute -bottom-6 -right-6 w-full h-full border-8 border-green-100 rounded-lg -z-10"></div>
           <img
-            src="https://i.ibb.co/FkSfnK2V/Chat-GPT-Image-Oct-13-2025-08-19-00-PM.png" // 👈 apni doctor image yaha daaliye (public/doctor.png me save karo)
+            src="https://i.ibb.co/ZR8PfpH8/hospital.png" // 👈 apni doctor image yaha daaliye (public/doctor.png me save karo)
             alt="Doctor"
             className="rounded-lg shadow-lg relative z-10"
           />
