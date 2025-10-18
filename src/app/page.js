@@ -16,15 +16,15 @@ export default function Home() {
 
   return (
     <>
+      <FloatingSocialIcons />
       <Navbar />
       <Hero />
       <About />
       <Services />
       <Facilities />
       <Doctors />
-      {/* <Contact /> */}
-      <Footer />
-      <FloatingSocialIcons />
+
+
     </>
   );
 }

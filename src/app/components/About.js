@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 
 export default function AboutUs() {
@@ -36,9 +37,11 @@ export default function AboutUs() {
           </div>
 
           {/* Button */}
-          <button className="mt-8 px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-700 transition">
-            Book An Appointment
-          </button>
+          <Link href="/appointment">
+            <button className="mt-8 px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-700 transition">
+              Book An Appointment
+            </button>
+          </Link>
         </div>
 
         {/* Right Side Doctor Image */}

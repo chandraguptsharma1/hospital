@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   FaAmbulance,
   FaStethoscope,
@@ -48,9 +49,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-6 sm:mt-8">
-            <button className="px-6 sm:px-8 py-3 bg-green-600 text-white rounded-lg shadow-md hover:bg-green-700 transition w-full sm:w-auto">
-              Book Appointment
-            </button>
+            <Link href="/appointment">
+              <button className="px-6 sm:px-8 py-3 bg-green-600 text-white rounded-lg shadow-md hover:bg-green-700 hover:scale-105 transition w-full sm:w-auto">
+                Book Appointment
+              </button>
+            </Link>
           </div>
         </motion.div>
 
