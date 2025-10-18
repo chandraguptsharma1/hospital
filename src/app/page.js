@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Facilities from "./pages/Facilities";
 import Doctors from "./pages/Doctors";
+import FloatingSocialIcons from "./components/FloatingSocialIcons";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Doctors />
       {/* <Contact /> */}
       <Footer />
+      <FloatingSocialIcons />
     </>
   );
 }
