@@ -7,52 +7,63 @@ export default function AboutPage() {
         <>
             <Navbar />
 
-            {/* About Us Section */}
+            {/* About Section */}
             <section className="bg-teal-800 py-24">
-                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
+                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                     {/* Left Content */}
                     <div className="text-white space-y-6">
-                        {/* Small Title */}
                         <p className="uppercase text-yellow-400 font-semibold tracking-wide">
-                            ~ Who We Are
+                            ~ About Get Well Hospital
                         </p>
 
-                        {/* Main Heading */}
-                        <h2 className="text-3xl md:text-4xl font-bold">
-                            We Help To Get You Well.
+                        <h2 className="text-3xl md:text-4xl font-bold leading-snug">
+                            24×7 Emergency & Specialized Surgical Care
                         </h2>
 
-                        {/* Main Description */}
                         <p className="text-gray-200 leading-relaxed">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s,
+                            <strong>GET WELL HOSPITAL</strong> offers round-the-clock emergency services,
+                            modern surgical care, and compassionate medical support. Our hospital is equipped
+                            with advanced facilities and a team of experienced doctors who are dedicated to
+                            providing quality healthcare with trust and care.
                         </p>
 
-                        {/* Bottom Small Block */}
-                        <div className="flex items-start gap-4">
+                        <div className="bg-white/10 p-4 rounded-md">
+                            <p className="text-yellow-300 font-semibold mb-2">हमारी सेवाएँ :</p>
+                            <p className="text-gray-100 leading-relaxed text-sm">
+                                हमारे यहाँ हर्निया, अपेंडिक्स, पित्त थैली में पथरी, सीजेरियन,
+                                बच्चेदानी, बवासीर, किडनी स्टोन आदि ऑपरेशन दूरबीन द्वारा किए जाते हैं।
+                            </p>
+                        </div>
+
+                        <div className="flex items-start gap-4 mt-6">
                             <img
                                 src="https://i.ibb.co/MyW7qtYQ/bro.png"
                                 alt="Hospital Icon"
                                 className="w-10 h-10"
                             />
                             <p className="text-sm text-gray-300 leading-relaxed">
-                                It is a long established fact that a reader will be distracted
-                                by the readable content of a page when looking at its layout.
-                                The point of using Lorem Ipsum is that it has a more-or-less
-                                normal distribution of letters, making it look like readable
-                                English.
+                                We ensure patients receive world-class treatment in a comfortable and safe
+                                environment. Our motto is simple — <span className="text-yellow-400 font-semibold">
+                                    “We Help You Get Well.”</span>
+                            </p>
+                        </div>
+
+                        <div className="mt-6">
+                            <p className="text-green-300 font-semibold text-lg">
+                                📍 Plot No. 286, Co-operative Colony, Near Ukrid More – 827001
+                            </p>
+                            <p className="text-gray-200 mt-2">
+                                📞 <span className="text-white">+91 8904117494, 9431586911</span>
                             </p>
                         </div>
                     </div>
 
-                    {/* Right Illustration */}
+                    {/* Right Image */}
                     <div className="flex justify-center">
                         <img
                             src="https://i.ibb.co/CdZ32FB/rafiki.png"
-                            alt="Hospital Illustration"
-                            className="w-full max-w-md"
+                            alt="Hospital Ambulance"
+                            className="w-full max-w-md rounded-lg shadow-lg"
                         />
                     </div>
                 </div>

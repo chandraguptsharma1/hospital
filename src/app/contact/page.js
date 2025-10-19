@@ -100,12 +100,14 @@ export default function ContactPage() {
                     <div className="mt-16">
                         <iframe
                             title="Get Well Hospital Location"
-                            src="https://www.google.com/maps?q=Co-operative+Colony+Ukrid+More,+Bokaro,+Jharkhand&output=embed"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58478.58160655567!2d86.05921082167968!3d23.6433456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f423005c204f8f%3A0xe84ec1f224334190!2sGetwell%20hospital!5e0!3m2!1sen!2sin!4v1760860764952!5m2!1sen!2sin"
                             className="w-full h-96 rounded-lg shadow-lg border"
                             allowFullScreen
                             loading="lazy"
                         ></iframe>
                     </div>
+
+
                 </div>
             </section>
             <Footer />

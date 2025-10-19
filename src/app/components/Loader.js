@@ -22,9 +22,7 @@ export default function Loader() {
                 autoplay={true}
                 style={{ width: 180, height: 180 }}
             />
-            <p className="mt-4 text-red-600 text-lg font-semibold animate-pulse">
-                Loading...
-            </p>
+
         </div>
     );
 }

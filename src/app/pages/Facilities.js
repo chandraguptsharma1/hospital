@@ -16,12 +16,12 @@ export default function Facilities() {
       desc: "Quick and safe surgical care available 24/7 with modern equipment and experienced doctors.",
       link: "/facilities/instant-operation",
     },
-    {
-      icon: <FaVideo size={28} />,
-      title: "Online Sessions",
-      desc: "Consult with our doctors from home through secure video calls and online follow-ups.",
-      link: "/facilities/online-sessions",
-    },
+    // {
+    //   icon: <FaVideo size={28} />,
+    //   title: "Online Sessions",
+    //   desc: "Consult with our doctors from home through secure video calls and online follow-ups.",
+    //   link: "/facilities/online-sessions",
+    // },
     {
       icon: <FaAmbulance size={28} />,
       title: "Emergency Care",
@@ -44,10 +44,10 @@ export default function Facilities() {
 
   return (
     <section className="bg-green-50 py-20">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
         {/* Left Text */}
         <div>
-          <p className="text-green-600 font-semibold uppercase tracking-wide flex items-center gap-2">
+          <p className="text-green-600 font-semibold uppercase tracking-wide flex gap-2">
             <span className="w-8 h-[2px] bg-green-600"></span> Our Facilities
           </p>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-gray-800">
@@ -58,12 +58,6 @@ export default function Facilities() {
             instant surgeries, emergency care, online consultations, and private wards.
             We are committed to providing quality treatment with compassion and care.
           </p>
-
-          {/* <Link href="/facilities">
-            <button className="mt-8 px-6 py-3 border border-green-600 text-green-600 rounded-md hover:bg-green-600 hover:text-white transition">
-              View All →
-            </button>
-          </Link> */}
         </div>
 
         {/* Right Facility Cards */}
@@ -80,5 +74,6 @@ export default function Facilities() {
         </div>
       </div>
     </section>
+
   );
 }
