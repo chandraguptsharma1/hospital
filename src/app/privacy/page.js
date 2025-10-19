@@ -35,8 +35,8 @@ export default function PrivacyPage() {
 
                     <p className="text-gray-600">
                         For privacy-related concerns, contact us at{" "}
-                        <a href="mailto:getwellhospital@gmail.com" className="text-green-600 underline">
-                            getwellhospital@gmail.com
+                        <a href="mailto:Getwellbksc@gmail.com" className="text-green-600 underline">
+                            Getwellbksc@gmail.com
                         </a>
                         .
                     </p>

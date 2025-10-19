@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex items-center gap-2">
               <FaEnvelope className="text-green-500" />
-              <span>info@getwellhospital.com</span>
+              <span>Getwellbksc@gmail.com</span>
             </div>
             <div className="mt-2 flex items-center gap-2">
               <FaMapMarkerAlt className="text-green-500" />
