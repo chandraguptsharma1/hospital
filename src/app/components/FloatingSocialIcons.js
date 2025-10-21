@@ -16,7 +16,7 @@ export default function FloatingSocialIcons() {
 
             {/* WhatsApp */}
             <a
-                href="https://wa.me/919334397815"
+                href="https://wa.me/918904117494"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white p-3 rounded-l-xl shadow-md hover:bg-green-600 transform transition-all duration-300 hover:translate-x-[-8px]"
