@@ -47,9 +47,11 @@ export default function Facilities() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
         {/* Left Text */}
         <div>
-          <p className="text-green-600 font-semibold uppercase tracking-wide flex gap-2">
+          <p className="text-green-600 font-semibold uppercase tracking-wide flex items-center gap-2">
             <span className="w-8 h-[2px] bg-green-600"></span> Our Facilities
           </p>
+
+
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-gray-800">
             Facilities That We Provide
           </h2>

@@ -1,13 +1,41 @@
 "use client";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { NextSeo } from "next-seo"; // 👈 import this
 
 export default function AboutPage() {
     return (
         <>
+            {/* ✅ SEO Tags for this page */}
+            <NextSeo
+                title="About Get Well Hospital Bokaro | 24×7 Emergency & Surgical Care"
+                description="Get Well Hospital Bokaro offers 24×7 emergency services, advanced surgical care, and trusted doctors providing quality healthcare in Bokaro."
+                canonical="https://getwellbksc.com/about"
+                openGraph={{
+                    url: "https://getwellbksc.com/about",
+                    title: "About Get Well Hospital Bokaro",
+                    description:
+                        "24×7 emergency, modern surgical facilities, and compassionate healthcare at Get Well Hospital Bokaro.",
+                    images: [
+                        {
+                            url: "https://getwellbksc.com/og-image.jpg",
+                            width: 1200,
+                            height: 630,
+                            alt: "Get Well Hospital Bokaro",
+                        },
+                    ],
+                    site_name: "Get Well Hospital Bokaro",
+                }}
+                twitter={{
+                    handle: "@getwellbksc",
+                    site: "@getwellbksc",
+                    cardType: "summary_large_image",
+                }}
+            />
+
+            {/* ✅ Page Content */}
             <Navbar />
 
-            {/* About Section */}
             <section className="bg-teal-800 py-24">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                     {/* Left Content */}
@@ -43,8 +71,10 @@ export default function AboutPage() {
                             />
                             <p className="text-sm text-gray-300 leading-relaxed">
                                 We ensure patients receive world-class treatment in a comfortable and safe
-                                environment. Our motto is simple — <span className="text-yellow-400 font-semibold">
-                                    “We Help You Get Well.”</span>
+                                environment. Our motto is simple —{" "}
+                                <span className="text-yellow-400 font-semibold">
+                                    “We Help You Get Well.”
+                                </span>
                             </p>
                         </div>
 
